@@ -1,0 +1,230 @@
+/*
+*
+* @author Eduardo Kochhann
+* @version 0.1
+* 
+*/
+
+/* ============================== Layout ================================= */
+
+html, body, .capa {
+    height: 100%;
+}
+
+body {
+    background: url('img/fundo-horizontal-site-vortex.png');
+    background-size: cover;
+    background-attachment: fixed;   
+    overflow-x: hidden; 
+}
+
+/* == Barra de Navegação == */
+
+.img-logo {
+    height: 49px;
+    width: 140px;
+    display: block;
+    background: url('img/logo-branca-horizontal.png') no-repeat;
+    background-size: contain;
+    color: transparent;
+}
+
+nav.navbar-vortex {
+    background-image: linear-gradient(to bottom right, #284073, 70%, #7ff3fd);
+    box-shadow: 0px 2px 10px black;
+    padding: 15px 0px;
+    border: none;    
+}
+
+a.navbar-brand-vortex {
+    padding: 2px 15px;
+    
+}
+
+.divisor {
+    width: 1px;
+    height: 16px;
+    background: white;
+    margin: 16px 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: black;
+}
+
+/* == imagem de fundo == */
+
+.capa {
+    display: table;
+}
+
+.texto-capa {
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* == Botões == */
+
+.button {
+    margin-top: 15px;
+    color:#284073;
+    background-color: #7ff3fd;
+    transition: background 0.4s, color 0.4s;
+}
+
+.button:hover {
+    color: white;
+    background: #9d9d9d ;
+    box-shadow: 0.1em 0.1em 0.3em white;
+}
+
+/*.btn-custom {    
+    color: #284073;
+    background: #7ff3fd; 
+    border-radius: 400px;
+    -webkit-border-radius: 400px;
+    -moz-border-radius: 400px;
+    padding:10px 35px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+}
+
+.btn-custom:hover {
+    color: white;
+    background: #284073 ;
+    box-shadow: 0.1em 0.1em 0.3em white;
+}*/
+
+/* == Secao de servicos == */
+
+#servicos {
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.img-servicos {
+    padding: 10px 0px 10px 0px;
+}
+
+/* == Secao quem somos ==*/
+
+#quem-somos {
+    padding-top: 35px;
+    padding-bottom: 0px;
+}
+
+#quem-somos img {
+    padding-left: 15px;
+    padding-top: 85px;
+}
+
+/* == Rodape == */
+
+footer{
+    padding: 50px 0px 20px 0px;
+    margin-top: 40px;
+    position: relative;       
+}
+
+.icons-ct {
+    float: left;
+    text-decoration: none;
+    list-style: none;
+   
+}
+
+.div-contato {
+    margin-top: -83px;
+    margin-left: -25px;
+}
+
+
+
+
+/* ============================== Tipografia ================================= */
+
+.capa h1 {    
+    font-size: 100px;
+    font-weight: 900;
+    font-family: 'Montserrat';
+    letter-spacing: -0.05em;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    margin-bottom: 50px;
+}
+
+.capa h3 {    
+    font-size: 70px;
+    font-weight: 900;
+    font-family: 'Montserrat';
+    text-shadow: 0.1em 0.1em 0.2em black;
+    margin-bottom: 50px;
+
+}
+
+.era-digital h2 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.era-digital p {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+}
+
+#quem-somos h2 {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+#quem-somos p{
+    color:white;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+}
+
+.contato {
+    color: white;
+}
+
+.copy {
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 10px;
+}
+
+/*================MEDIA QUERYs=================*/
+@media only screen and (max-width: 480px){
+
+    .capa h1{
+        font-size: 55px;
+        margin-top: 65px;
+        margin-bottom: 70px        
+    }
+
+    .capa h3{
+        font-size: 45px;
+    }
+
+    .navbar-toggle{
+        padding: 15px 10px;
+    }
+
+    .div-contato {
+        margin-top: -90px;
+        margin-left: -15px;
+    }
+
+}
